@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBLOXIA: QUIZ!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/generico.css">
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+</head>
+<body>
+    <div class="background">
+        <section class="card">
+            <section class="quiz-container">
+                <div id="question-card" class="question-card">
+                    <div id="question" class="question"></div>
+                    <ul id="answers" class="answers"></ul>
+                </div>
+                <button id="botao-submit" class="botao" onclick="submitAnswer()">Enviar Resposta</button>
+                <button id="botao" class="botao botao-feedBack">Próxima pergunta</button>
+                <button id="botao-resultados" class="botao"><a href="./index.html">FINALIZAR PARTIDA</a></button>
+            </section>
+            <section class="quiz-container">
+                <img class="imagem-feedback" id="imagem" src="" alt="">
+                <div id="feedback" class="feedback"></div>
+                <a class="referencia-display-modificado" id="referencia" href=""  target=”_blank”><p>Para saber mais leia:</p><img width="50" height="50" src="https://img.icons8.com/ios/50/news.png" alt="news"/></a>  
+                <p id="paragrafo-resultados" class="paragrafo-resultados"></p> 
+                <img id="imagem-resultados" class="imagem-resultados" src="" alt="">
+            </section>
+        </section>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

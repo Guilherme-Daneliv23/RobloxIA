@@ -1,0 +1,54 @@
+.card__creditos {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+    padding: 40px;
+    text-align: center;
+    opacity: 0.94;
+    width: 60%;
+}
+
+.card__creditos--titulo  {
+    font-size: 16px;
+}
+
+.card__creditos--conteudo   {
+    margin: 30px;
+    
+}
+
+.card__creditos--conteudo--titulo   {
+    font-size: 15px;
+    color: #f0a818;
+}
+
+.card__creditos--conteudo--imagem   {
+    border-radius: 50%;
+    height: 80px;
+    margin: 10px 0 10px 0;
+    width: 80px;
+}
+
+.card__creditos--display    {
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.card__creditos--conteudo--rede {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card__creditos--conteudo--rede--link   {
+    font-size: 12px;
+    color: blue;
+    margin-left: 15px;
+    text-decoration: underline;
+}

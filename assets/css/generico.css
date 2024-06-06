@@ -1,0 +1,38 @@
+h1, h2, h3, p, div, a, button  {
+    font-family: "Press Start 2P", system-ui;
+}
+
+.background {
+    background-image: url('../img/background/telainicialmobile.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.5;
+    
+}
+
+.botao  {
+    background-color: #f0a818;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 150px;
+}
+
+.alinhamento    {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 922px)    {
+    .background {
+        background-image: url('../img/background/telainicial.jpg');
+    }
+}
