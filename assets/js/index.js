@@ -25,7 +25,7 @@ const quiz = [
         feedbackIncorreto: "Você errou! A IA pode ser sim utilizada na identificação de plágio pois tem facilidade em identificar o mesmo, porém, claro que ainda há falhas e deve ser unida a mais análises feitas de outras formas",
         imagemCorreto: "./assets/img/feedbackpositivo/positivo02.gif",
         imagemIncorreto: "./assets/img/feedbacknegativo/negativo02.gif",
-        referencia: ""
+        referencia: "https://arxiv.org/pdf/1802.07228"
     },
     {
         question: "No Brasil, já há algum projeto de lei que busque regulamentar a IA?",
@@ -218,10 +218,16 @@ function submitAnswer() {
 
                 // RETORNA OS ÚLTIMOS FEEDBACKS DEPENDENDO DA QUANTIDADE DE ACERTO
 
-                if(acertos > 5) {
-                    imagemResultados.src = "./assets/img/feedbackpositivo/positivo01.gif";
+                if(acertos == 0) {
+                    imagemResultados.src = "./assets/img/resultados/resultado00.jpg";
+                } else if(acertos >= 1 && acertos <= 4) {
+                    imagemResultados.src = "./assets/img/resultados/resultado14.gif";
+                } else if(acertos == 5) {
+                    imagemResultados.src = "./assets/img/resultados/resultado55.jpg";
+                } else if(acertos >= 6 && acertos <= 8) {
+                    imagemResultados.src = "./assets/img/resultados/resultado68.gif";
                 } else {
-                    imagemResultados.src = "./assets/img/feedbacknegativo/negativo01.jpg";
+                    imagemResultados.src = "./assets/img/resultados/resultado910.gif";
                 }
             })
 

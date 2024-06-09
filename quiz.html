@@ -14,16 +14,16 @@
 <body>
     <div class="background">
         <section class="card">
-            <section class="quiz-container">
+            <section class="quiz-container quiz-container--pergunta">
                 <div id="question-card" class="question-card">
-                    <div id="question" class="question"></div>
+                    <p id="question" class="question"></p>
                     <ul id="answers" class="answers"></ul>
                 </div>
                 <button id="botao-submit" class="botao" onclick="submitAnswer()">Enviar Resposta</button>
                 <button id="botao" class="botao botao-feedBack">Próxima pergunta</button>
                 <button id="botao-resultados" class="botao"><a href="./index.html">FINALIZAR PARTIDA</a></button>
             </section>
-            <section class="quiz-container">
+            <section class="quiz-container quiz-container--feedback">
                 <img class="imagem-feedback" id="imagem" src="" alt="">
                 <div id="feedback" class="feedback"></div>
                 <a class="referencia-display-modificado" id="referencia" href=""  target=”_blank”><p>Para saber mais leia:</p><img width="50" height="50" src="https://img.icons8.com/ios/50/news.png" alt="news"/></a>  
